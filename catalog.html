@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Catalog</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="logo">SportWear</div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li><a href="catalog.html" class="active">Catalog</a></li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- CATALOG -->
+
+      <section class="catalog-page">
+        <h1>Product Catalog</h1>
+
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <!-- HOODIES -->
+
+        <div class="catalog-category" data-category="hoodies">
+          <h2>Hoodies</h2>
+
+          <div class="product-container">
+            <div class="card product-card">
+              <img src="images/hoodie-black.jpg" alt="hoodie" />
+
+              <h3>Black Hoodie</h3>
+
+              <p>$50</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/hoodie-gray.jpg" alt="hoodie" />
+
+              <h3>Gray Hoodie</h3>
+
+              <p>$55</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/hoodie-red.jpg" alt="hoodie" />
+
+              <h3>Red Hoodie</h3>
+
+              <p>$60</p>
+
+              <button class="openModal">View More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SNEAKERS -->
+
+        <div class="catalog-category" data-category="sneakers">
+          <h2>Sneakers</h2>
+
+          <div class="product-container">
+            <div class="card product-card">
+              <img src="images/shoes-black.jpg" alt="shoes" />
+
+              <h3>Black Sneakers</h3>
+
+              <p>$80</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/shoes-white.jpg" alt="shoes" />
+
+              <h3>White Sneakers</h3>
+
+              <p>$90</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/shoes-red.jpg" alt="shoes" />
+
+              <h3>Red Sneakers</h3>
+
+              <p>$85</p>
+
+              <button class="openModal">View More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- T-SHIRTS -->
+
+        <div class="catalog-category" data-category="tshirts">
+          <h2>T-Shirts</h2>
+
+          <div class="product-container">
+            <div class="card product-card">
+              <img src="images/tshirt-black.jpg" alt="tshirt" />
+
+              <h3>Black T-Shirt</h3>
+
+              <p>$30</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/tshirt-white.jpg" alt="tshirt" />
+
+              <h3>White T-Shirt</h3>
+
+              <p>$35</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/tshirt-yellow.jpg" alt="tshirt" />
+
+              <h3>Yellow T-Shirt</h3>
+
+              <p>$28</p>
+
+              <button class="openModal">View More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANTS -->
+
+        <div class="catalog-category" data-category="pants">
+          <h2>Training Pants</h2>
+
+          <div class="product-container">
+            <div class="card product-card">
+              <img src="images/pants-black.jpg" alt="pants" />
+
+              <h3>Black Pants</h3>
+
+              <p>$40</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/pants-gray.jpg" alt="pants" />
+
+              <h3>Gray Pants</h3>
+
+              <p>$45</p>
+
+              <button class="openModal">View More</button>
+            </div>
+
+            <div class="card product-card">
+              <img src="images/pants-sport.jpg" alt="pants" />
+
+              <h3>Sport Pants</h3>
+
+              <p>$50</p>
+
+              <button class="openModal">View More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 SportWear. All rights reserved.</p>
+    </footer>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="productModal">
+      <div class="modal-content">
+        <span class="close-btn"> &times; </span>
+
+        <h2 id="modalTitle">Product</h2>
+
+        <p id="modalPrice">$0</p>
+
+        <p id="modalDescription">
+          Comfortable and modern sportswear for active lifestyle and training.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
